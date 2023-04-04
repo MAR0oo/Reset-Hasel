@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-left: 30%;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#password {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
