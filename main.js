@@ -11,7 +11,7 @@ function generatePassword() {
         "Kreatywny", "Konsument", "Posiadacz", "Oprogramowanie", "Pracodawca",
         "Serwisant", "Organizacja", "Inwestor", "Projektant", "Wsparcie",
         "Specjalista", "Nadzorca", "Realizacja", "Innowacyjny", "Przywodca",
-        "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor", 
+        "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor",
         "Motylek", "Monitor", "Niebieski", "Zielony", "Rozowy", "Bialy", "Pomaranczowy",
         "Fioletowy", "Zloty", "Blekitny", "Moro", "Motyl", "Klawiatura", "Deska",
         "Organ", "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
@@ -26,7 +26,7 @@ function generatePassword() {
         }
         password += characters.charAt(Math.floor(Math.random() * characters.length));
 
-        passwords += `<div>${password} <button onclick="copyPassword(this)">Copy</button></div>` + "<br>"; 
+        passwords += `<div class="pass">${password} <button onclick="copyPassword(this)">Kopiuj</button></div>` ;
     }
     document.getElementById("password").innerHTML = "" + passwords;
 
