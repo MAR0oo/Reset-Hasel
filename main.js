@@ -11,7 +11,12 @@ function generatePassword() {
         "Kreatywny", "Konsument", "Posiadacz", "Oprogramowanie", "Pracodawca",
         "Serwisant", "Organizacja", "Inwestor", "Projektant", "Wsparcie",
         "Specjalista", "Nadzorca", "Realizacja", "Innowacyjny", "Przywodca",
-        "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor"];
+        "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor", 
+        "Motylek", "Monitor", "Niebieski", "Zielony", "Rozowy", "Bialy", "Pomaranczowy",
+        "Fioletowy", "Zloty", "Blekitny", "Moro", "Motyl", "Klawiatura", "Deska",
+        "Organ", "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
+        "Czarny","Brazowy"];
+
     const numbers =  "123456789";
     const characters = "!@#$%"
     for (let i = 0; i < 10; i++) {
