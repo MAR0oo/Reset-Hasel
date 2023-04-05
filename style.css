@@ -21,8 +21,13 @@ input[type=number] {
     width: 50px;
 }
 
-button {
+.pass{
     margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+button {
     padding: 5px 10px;
     font-size: large;
     background-color: #4CAF50;
@@ -37,6 +42,14 @@ button:hover {
     background-color: #3e8e41;
 }
 
+button:active{
+    transform: scale(0.90);
+}
+
+#passGen {
+    background-color: #0baf9c;
+}
+
 #password {
     font-size: 24px;
     text-align: center;
@@ -45,6 +58,10 @@ button:hover {
 button.copied {
     background-color: red;
 }
+button.copied:hover {
+    background-color: #f8394e;
+}
+
 
 #password div {
     display: flex;
