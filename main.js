@@ -12,7 +12,7 @@ function generatePassword() {
         "Serwisant", "Organizacja", "Inwestor", "Projektant", "Wsparcie",
         "Specjalista", "Nadzorca", "Realizacja", "Innowacyjny", "Przywodca",
         "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor"];
-    const numbers =  "0123456789";
+    const numbers =  "123456789";
     const characters = "!@#$%"
     for (let i = 0; i < 10; i++) {
         password = word[(Math.floor(Math.random() * word.length))];
