@@ -21,7 +21,15 @@ function generatePassword() {
         }
         password += characters.charAt(Math.floor(Math.random() * characters.length));
 
-        passwords += password + "<br>"; // dodajemy znacznik <br> po każdym haśle
+        passwords += `<div>${password} <button onclick="copyPassword(this)">Copy</button></div>` + "<br>"; 
     }
     document.getElementById("password").innerHTML = "" + passwords;
+
+}
+
+function copyPassword(button) {
+    const password = button.parentNode.firstChild.textContent;
+    navigator.clipboard.writeText(password).then(() => {
+        button.classList.add("copied");
+    });
 }
