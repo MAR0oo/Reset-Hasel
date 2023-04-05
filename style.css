@@ -1,14 +1,16 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 h1 {
     text-align: center;
 }
 
-form {
-    margin-left: 30%;
-}
 
 label {
     display: inline-block;
@@ -22,6 +24,7 @@ input[type=number] {
 button {
     margin-top: 10px;
     padding: 5px 10px;
+    font-size: large;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -38,4 +41,16 @@ button:hover {
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+}
+button.copied {
+    background-color: red;
+}
+
+#password div {
+    display: flex;
+    align-items: center;
+}
+
+#password button {
+    margin-left: 10px;
 }
