@@ -26,7 +26,7 @@ function generatePassword() {
         }
         password += characters.charAt(Math.floor(Math.random() * characters.length));
 
-        passwords += `<div class="pass">${password} <button onclick="copyPassword(this)">Kopiuj</button></div>` ;
+        passwords += `<div class="pass">${password}<button onclick="copyPassword(this)">Kopiuj</button></div>`;
     }
     document.getElementById("password").innerHTML = "" + passwords;
 
