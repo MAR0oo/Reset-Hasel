@@ -16,7 +16,7 @@ function generatePassword() {
         "Fioletowy", "Zloty", "Blekitny", "Moro", "Motyl", "Klawiatura", "Deska",
         "Organ", "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
         "Czarny","Brazowy","Akwizytor",
-        "Bezpieczenstwo","Certyfikat","Dostawczyni","Elektrownia","Fotelarz","Gospodarstwo","Hurtownia","Informatyka","Jubilerstwo","Kontroler","Lokalizacja","Mieszkanie","Naukowiec","Organizacja","Poczta","Przemyslowy","Redaktor","Spoldzielnia","Turystyka","Uniwersytet","Videokonferencja","Weteran","Xero-kopiarka","Zabezpieczenie","Administracja","Biotechnologia","Chlodnica","Dyskwalifikacja","Egzekucja","Farmaceuta","Geograficzny","Hotelarstwo","Inwestycja","Jezykoznawca","Konsultacja","Laboratorium","Motywacja","Niezawodnosc","Optymalizacja","Pracownik","Reklamacja","Sekretariat","Tlumaczenie","Ubezpieczenie","Wspolpraca","Zaladowanie","Akredytacja","Biblioteka"];
+        "Bezpieczenstwo","Certyfikat","Dostawczyni","Elektrownia","Fotelarz","Gospodarstwo","Hurtownia","Informatyka","Jubilerstwo","Kontroler","Lokalizacja","Mieszkanie","Naukowiec","Organizacja","Poczta","Przemyslowy","Redaktor","Spoldzielnia","Turystyka","Uniwersytet","Videokonferencja","Weteran","Kserokopiarka","Zabezpieczenie","Administracja","Biotechnologia","Chlodnica","Dyskwalifikacja","Egzekucja","Farmaceuta","Geograficzny","Hotelarstwo","Inwestycja","Jezykoznawca","Konsultacja","Laboratorium","Motywacja","Niezawodnosc","Optymalizacja","Pracownik","Reklamacja","Sekretariat","Tlumaczenie","Ubezpieczenie","Wspolpraca","Zaladowanie","Akredytacja","Biblioteka"];
 
     const numbers =  "123456789";
     const characters = "!@#$%"
