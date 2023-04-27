@@ -15,12 +15,16 @@ function generatePassword() {
         "Motylek", "Monitor", "Niebieski", "Zielony", "Rozowy", "Bialy", "Pomaranczowy",
         "Fioletowy", "Zloty", "Blekitny", "Moro", "Motyl", "Klawiatura", "Deska",
         "Organ", "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
-        "Czarny","Brazowy"];
+        "Czarny","Brazowy","Akwizytor",
+        "Bezpieczenstwo","Certyfikat","Dostawczyni","Elektrownia","Fotelarz","Gospodarstwo","Hurtownia","Informatyka","Jubilerstwo","Kontroler","Lokalizacja","Mieszkanie","Naukowiec","Organizacja","Poczta","Przemyslowy","Redaktor","Spoldzielnia","Turystyka","Uniwersytet","Videokonferencja","Weteran","Xero-kopiarka","Zabezpieczenie","Administracja","Biotechnologia","Chlodnica","Dyskwalifikacja","Egzekucja","Farmaceuta","Geograficzny","Hotelarstwo","Inwestycja","Jezykoznawca","Konsultacja","Laboratorium","Motywacja","Niezawodnosc","Optymalizacja","Pracownik","Reklamacja","Sekretariat","Tlumaczenie","Ubezpieczenie","Wspolpraca","Zaladowanie","Akredytacja","Biblioteka"];
 
     const numbers =  "123456789";
     const characters = "!@#$%"
     for (let i = 0; i < 10; i++) {
         password = word[(Math.floor(Math.random() * word.length))];
+        while(password.length < 8){
+            password += word[(Math.floor(Math.random() * word.length))];
+        }
         for (let i = 0; i < 3; i++) {
             password += numbers.charAt(Math.floor(Math.random() * numbers.length));
         }
