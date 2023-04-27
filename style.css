@@ -1,73 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 
 label {
-    display: inline-block;
-    width: 100px;
+  display: inline-block;
+  width: 100px;
 }
 
 input[type=number] {
-    width: 50px;
+  width: 50px;
 }
 
 .pass{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
 }
 
 button {
-    padding: 5px 10px;
-    font-size: large;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
+  padding: 5px 10px;
+  font-size: large;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 button:hover {
-    background-color: #3e8e41;
+  background-color: #3e8e41;
 }
 
 button:active{
-    transform: scale(0.90);
+  transform: scale(0.90);
 }
 
 #passGen {
-    background-color: #0baf9c;
+  background-color: #0baf9c;
 }
 
 #password {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
 }
 button.copied {
-    background-color: red;
+  background-color: red;
 }
 button.copied:hover {
-    background-color: #f8394e;
+  background-color: #f8394e;
 }
 
 
 #password div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #password button {
-    margin-left: 10px;
+  margin-left: 10px;
+}
+#sebamamalego{
+  background-color: #3b94aa;
+}
+#sebamamalego.copied{
+  background-color: #aa3ba1;
 }
