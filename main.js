@@ -84,7 +84,7 @@ function copyHTML(button) {
                         </tr>
                         <tr>
                             <td class="footer">
-                                <p>Prosimy nie odpowiadać na ten email. To jest automatycznie wygenerowana wiadomość.</p>
+                                <p>Prosimy nie odpowiadać na ten email. Wiadomość wygenerowana automatycznie.</p>
                             </td>
                         </tr>
                     </table>
