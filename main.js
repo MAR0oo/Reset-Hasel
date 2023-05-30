@@ -12,14 +12,14 @@ function generatePassword() {
         "Serwisant", "Organizacja", "Inwestor", "Projektant", "Wsparcie",
         "Specjalista", "Nadzorca", "Realizacja", "Innowacyjny", "Przywodca",
         "Bezposredni", "Organizator", "Strategia", "Odpowiedzialny", "Dyrektor",
-        "Motylek", "Monitor", "Niebieski", "Zielony", "Rozowy", "Bialy", "Pomaranczowy",
-        "Fioletowy", "Zloty", "Blekitny", "Moro", "Motyl", "Klawiatura", "Deska",
-        "Organ", "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
-        "Czarny","Brazowy","Akwizytor",
+        "Motylek", "Monitor", "Niebieski", "Zielony", "Rozowy", "Pomaranczowy",
+        "Fioletowy", "Blekitny", "Motyl", "Klawiatura",
+        "Kurier", "Paczka", "Podglad", "Centrala", "Helpdesk",
+        "Brazowy","Akwizytor",
         "Bezpieczenstwo","Certyfikat","Dostawczyni","Elektrownia","Fotelarz","Gospodarstwo","Hurtownia","Informatyka","Jubilerstwo","Kontroler","Lokalizacja","Mieszkanie","Naukowiec","Organizacja","Poczta","Przemyslowy","Redaktor","Spoldzielnia","Turystyka","Uniwersytet","Videokonferencja","Weteran","Kserokopiarka","Zabezpieczenie","Administracja","Biotechnologia","Chlodnica","Dyskwalifikacja","Egzekucja","Farmaceuta","Geograficzny","Hotelarstwo","Inwestycja","Jezykoznawca","Konsultacja","Laboratorium","Motywacja","Niezawodnosc","Optymalizacja","Pracownik","Reklamacja","Sekretariat","Tlumaczenie","Ubezpieczenie","Wspolpraca","Zaladowanie","Akredytacja","Biblioteka"];
-
+    
     const numbers =  "123456789";
-    const characters = "!@#$%"
+    const characters = "!@#$%";
     for (let i = 0; i < 10; i++) {
         password = word[(Math.floor(Math.random() * word.length))];
         while(password.length < 8){
@@ -30,11 +30,26 @@ function generatePassword() {
         }
         password += characters.charAt(Math.floor(Math.random() * characters.length));
 
-        passwords += `<div class="pass">${password}<button onclick="copyPassword(this)">Kopiuj</button>   <button id="sebamamalego" onclick="copyHTML(this)">Kopiuj HTML</button></div>`;    
+        passwords += `<div class="pass">${password}<button onclick="copyPassword(this)">Kopiuj</button> 
+          <button id="sebamamalego" onclick="copyHTML(this)">Kopiuj HTML</button>
+           <button id="janekmamalego" onclick="sendEmail(this)">Wyślij e-mail</button></div> `;    
     }
 
     document.getElementById("password").innerHTML = "" + passwords;
 
+}
+function sendEmail(button) {
+    const password = button.parentNode.firstChild.textContent;
+    var email = prompt("Podaj adres e-mail odbiorcy:");
+    button.classList.add("copied");
+    const mailTemplate = "Witaj%2C%0D%0A%0D%0ATwoje%20has%C5%82o%20zosta%C5%82o%20pomy%C5%9Blnie%20zmienione.%20Poni%C5%BCej%20znajduje%20si%C4%99%20Twoje%20nowe%20has%C5%82o%3A%0D%0A%0D%0A"+password+"%40%0D%0A%0D%0AProsimy%20o%20zalogowanie%20si%C4%99%20na%20swoje%20konto%20i%20natychmiastowe%20zmienienie%20has%C5%82a%20na%20w%C5%82asne%2C%20unikalne%20has%C5%82o.%0D%0A%0D%0AHas%C5%82o%20mo%C5%BCna%20zmieni%C4%87%20na%20stronie%20hasla.dpd.com.pl%0D%0A%0D%0AProsimy%20nie%20odpowiada%C4%87%20na%20ten%20email.%20Wiadomo%C5%9B%C4%87%20wygenerowana%20automatycznie."; 
+    if (email !== null) {
+        var subject = encodeURIComponent("Zmiana hasła");
+        var body = mailTemplate;
+
+        var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+        window.location.href = mailtoLink;
+    }
 }
 
 function copyPassword(button) {
