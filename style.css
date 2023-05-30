@@ -5,10 +5,13 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
+  background-color: rgba(1, 2, 2, 0.945);
+  color: white;
 }
 
 h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 
@@ -48,6 +51,9 @@ button:active{
 
 #passGen {
   background-color: #0baf9c;
+  width: 210px;
+  height: 60px;
+
 }
 
 #password {
@@ -56,11 +62,9 @@ button:active{
   margin-top: 20px;
 }
 button.copied {
-  background-color: red;
+  background-color: #3b3b39;
 }
-button.copied:hover {
-  background-color: #f8394e;
-}
+
 
 
 #password div {
@@ -75,5 +79,46 @@ button.copied:hover {
   background-color: #3b94aa;
 }
 #sebamamalego.copied{
-  background-color: #aa3ba1;
+  background-color: #3b3b39;
 }
+
+
+#janekmamalego{
+  background-color: #9dca22;
+}
+
+#janekmamalego.copied{
+  background-color: #3b3b39;
+}
+.switch {
+	height: 30px;
+	width: 80px;
+	background-color: white;
+	border-radius: 30px;
+	position: relative;
+	cursor: pointer;
+	margin: auto;
+	margin-top: 5px;
+  margin-bottom: 15px;
+  }
+  
+  .switch .toggle {
+	background: white url('https://i.ibb.co/FxzBYR9/night.png');
+	height: 45px;
+	width: 45px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: .2s linear all;
+  }
+  
+  .switch.light {
+	background-color: #303030;
+  }
+  
+  .switch.light .toggle {
+	background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+	left: calc(100% - 40px);
+  }
