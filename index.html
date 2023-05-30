@@ -6,13 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
 </head>
-<body>
-<h1>Generator haseł</h1>
-<p>Wygeneruj proste hasła</p>
-<form>
-    <br>
-    <button type="button" id="passGen" onclick="generatePassword()">Generuj hasła</button>
-</form>
+<body onload="generatePassword()">
+<h1>Generator haseł by Marco&Patryco</h1>
+<div class="switch" >
+    <div class="toggle"></div>
+    </div>
+<h2>Wygeneruj proste hasła</h2>
 <p id="password"></p>
+
+<button type="button" id="passGen" onclick="generatePassword()">Generuj ponownie</button>
+	<script src="motyw.js"></script>
 </body>
 </html>
