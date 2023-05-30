@@ -45,7 +45,7 @@ function sendEmail(button) {
     const mailTemplate = "Witaj%2C%0D%0A%0D%0ATwoje%20has%C5%82o%20zosta%C5%82o%20pomy%C5%9Blnie%20zmienione.%20Poni%C5%BCej%20znajduje%20si%C4%99%20Twoje%20nowe%20has%C5%82o%3A%0D%0A%0D%0A"+password+"%40%0D%0A%0D%0AProsimy%20o%20zalogowanie%20si%C4%99%20na%20swoje%20konto%20i%20natychmiastowe%20zmienienie%20has%C5%82a%20na%20w%C5%82asne%2C%20unikalne%20has%C5%82o.%0D%0A%0D%0AHas%C5%82o%20mo%C5%BCna%20zmieni%C4%87%20na%20stronie%20hasla.dpd.com.pl%0D%0A%0D%0AProsimy%20nie%20odpowiada%C4%87%20na%20ten%20email.%20Wiadomo%C5%9B%C4%87%20wygenerowana%20automatycznie."; 
     if (email !== null) {
         var subject = encodeURIComponent("Zmiana hasła");
-        var body = mailTemplate;
+        var body = encodeURIComponent('Witaj,\n\nTwoje hasło zostało pomyślnie zmienione. Oto Twoje nowe hasło:\n\n' + password + '\n\nZachęcamy do zalogowania się na swoje konto i natychmiastowej zmiany hasła na własne, unikalne. Można to zrobić na stronie hasla.dpd.com.pl\n\nProsimy nie odpowiadać na ten e-mail, jest to wiadomość wygenerowana automatycznie. Cenimy Twoje bezpieczeństwo i zawsze jesteśmy tu, aby pomóc.');
 
         var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
         window.location.href = mailtoLink;
