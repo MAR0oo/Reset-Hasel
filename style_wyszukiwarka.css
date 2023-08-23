@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+h2{
+    font-size: 70px;
+}
+#searchContainer {
+    text-align: center;
+  }
+  
+  #searchTitle {
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 40px;
+  }
+  
+  #results {
+    text-align: left;
+    font-size: 20px;
+  }
