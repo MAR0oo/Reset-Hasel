@@ -21,6 +21,7 @@ h2{
   }
   
   #results {
+    width: 60%;
     text-align: left;
     font-size: 20px;
   }
