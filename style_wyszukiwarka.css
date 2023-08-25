@@ -3,6 +3,7 @@ body{
 }
 h2{
     font-size: 70px;
+    margin-top: 15%;
 }
 #searchContainer {
     text-align: center;
@@ -16,13 +17,36 @@ h2{
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 60%;
+    width: 50%;
     height: 40px;
   }
   
   #results {
-    width: 60%;
-    margin: auto;
     text-align: left;
     font-size: 20px;
+width: 50%;
+margin: auto;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: large;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button:active{
+    transform: scale(0.90);
+  }
+
+  button.copied{
+    background-color: grey;
   }
